@@ -1,0 +1,713 @@
+                                                                        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+                                                                        * {
+                                                                            margin: 0;
+                                                                            padding: 0;
+                                                                            box-sizing: border-box;
+                                                                            font-family: 'Montserrat', sans-serif;
+                                                                        }
+                                                                        
+                                                                        h6 {
+                                                                            font-weight: 500;
+                                                                            font-size: 0.88vw;
+                                                                        }
+                                                                        
+                                                                        .section-p1 {
+                                                                            padding: 2vw 5vw;
+                                                                        }
+                                                                        
+                                                                        .section-m1 {
+                                                                            padding: 40px 0px;
+                                                                        }
+                                                                        
+                                                                        button.normal {
+                                                                            font-size: 1vw;
+                                                                            font-weight: 400;
+                                                                            padding: 1vw 1.3vw;
+                                                                            color: #000;
+                                                                            background-color: #fff;
+                                                                            border-radius: 0.31vw;
+                                                                            cursor: pointer;
+                                                                            border: none;
+                                                                            outline: none;
+                                                                            transition: 0.2s;
+                                                                        }
+                                                                        
+                                                                        body {
+                                                                            width: 100%;
+                                                                        }
+                                                                        
+                                                                        #header {
+                                                                            display: flex;
+                                                                            align-items: center;
+                                                                            justify-content: space-between;
+                                                                            padding: 2.3% 3% 3% 2%;
+                                                                            height: 5vw;
+                                                                            min-height: 10px;
+                                                                            width: 100%;
+                                                                            background-color: #E3E6F3;
+                                                                            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+                                                                            z-index: 999;
+                                                                            position: sticky;
+                                                                            top: 0;
+                                                                            left: 0;
+                                                                        }
+                                                                        
+                                                                        img {
+                                                                            height: 4.2vw;
+                                                                            border-radius: 20%;
+                                                                        }
+                                                                        
+                                                                        #navbar {
+                                                                            display: flex;
+                                                                            width: 27vw;
+                                                                            align-items: center;
+                                                                            justify-content: center;
+                                                                        }
+                                                                        
+                                                                        #navbar li {
+                                                                            list-style: none;
+                                                                            padding-right: 6%;
+                                                                            position: relative;
+                                                                        }
+                                                                        
+                                                                        #navbar.active {
+                                                                            right: 0;
+                                                                        }
+                                                                        
+                                                                        #navbar.active li a {
+                                                                            text-align: center;
+                                                                            font-size: 1rem;
+                                                                            margin-left: 1vw;
+                                                                        }
+                                                                        
+                                                                        #navbar.active li a::hover {
+                                                                            color: #088178;
+                                                                        }
+                                                                        
+                                                                        #navbar li a {
+                                                                            text-decoration: none;
+                                                                            font-size: 1.2vw;
+                                                                            font-weight: 600;
+                                                                            color: rgb(0, 0, 0);
+                                                                            transition: 0.3s ease;
+                                                                        }
+                                                                        
+                                                                        #navbar li a:hover,
+                                                                        #navbar li a.active {
+                                                                            color: #088178;
+                                                                        }
+                                                                        /* // pseudoclasses */
+                                                                        
+                                                                        #navbar li a.active::after,
+                                                                        #navbar li a:hover::after {
+                                                                            content: "";
+                                                                            width: 30%;
+                                                                            height: 0.15vw;
+                                                                            background: #088178;
+                                                                            position: absolute;
+                                                                            bottom: -0.5vw;
+                                                                            left: 0.20vw;
+                                                                            border-radius: 5px;
+                                                                        }
+                                                                        
+                                                                        #mobile {
+                                                                            display: none;
+                                                                            align-content: center;
+                                                                        }
+                                                                        
+                                                                        #close {
+                                                                            display: none;
+                                                                        }
+                                                                        
+                                                                        #hero {
+                                                                            height: 90vh;
+                                                                            width: 100%;
+                                                                            background-repeat: no-repeat;
+                                                                            background-size: cover;
+                                                                            padding: 0 5vw;
+                                                                            position: relative;
+                                                                            background-image: url('img/hero4.png');
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            align-items: flex-start;
+                                                                            justify-content: center;
+                                                                        }
+                                                                        
+                                                                        #hero {
+                                                                            padding-top: 10vw;
+                                                                            font-size: 2.2vw;
+                                                                        }
+                                                                        
+                                                                        #hero h1 {
+                                                                            color: #088178;
+                                                                        }
+                                                                        
+                                                                        p {
+                                                                            color: gray;
+                                                                        }
+                                                                        
+                                                                        #hero button {
+                                                                            position: absolute;
+                                                                            background-image: url("img/button.png");
+                                                                            background-repeat: no-repeat;
+                                                                            background-color: transparent;
+                                                                            background-size: contain;
+                                                                            padding: 1vw 4vw 4vw 4vw;
+                                                                            cursor: pointer;
+                                                                            font-weight: 700;
+                                                                            font-size: 1.4vw;
+                                                                            color: #088178;
+                                                                            border: none;
+                                                                            top: 38vw;
+                                                                        }
+                                                                        
+                                                                        #feature .fe-box {
+                                                                            text-align: center;
+                                                                            width: 9vw;
+                                                                            min-width: 5vw;
+                                                                            height: 11vw;
+                                                                            box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+                                                                            border: 0.1vw solid #cce7d0;
+                                                                            padding: 1.5vw 1vw;
+                                                                            border-radius: vw;
+                                                                            margin: 2vw 0.5vw;
+                                                                        }
+                                                                        
+                                                                        #feature .fe-box:hover {
+                                                                            box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.403);
+                                                                        }
+                                                                        
+                                                                        #feature .fe-box img {
+                                                                            width: 6vw;
+                                                                            margin-bottom: 01vw;
+                                                                        }
+                                                                        
+                                                                        #feature .fe-box h6 {
+                                                                            /* display: inline-block; */
+                                                                            /* padding: 0.2vw; */
+                                                                            line-height: 1vw;
+                                                                            text-align: center;
+                                                                            height: 1vw;
+                                                                            border-radius: 0.2vw;
+                                                                            color: #044c47;
+                                                                            background-color: #fddde4;
+                                                                        }
+                                                                        
+                                                                        #feature .fe-box:nth-child(2) h6 {
+                                                                            background-color: #cdebbc;
+                                                                        }
+                                                                        
+                                                                        #feature .fe-box:nth-child(3) h6 {
+                                                                            background-color: #f6dbf6;
+                                                                        }
+                                                                        
+                                                                        #feature .fe-box:nth-child(4) h6 {
+                                                                            background-color: #d1e8f2;
+                                                                        }
+                                                                        
+                                                                        #feature .fe-box:nth-child(5) h6 {
+                                                                            background-color: #cdd4f8;
+                                                                        }
+                                                                        
+                                                                        #feature .fe-box:nth-child(6) h6 {
+                                                                            background-color: #fff2e5;
+                                                                        }
+                                                                        
+                                                                        #feature {
+                                                                            display: flex;
+                                                                            flex-direction: row;
+                                                                            align-items: center;
+                                                                            justify-content: space-between;
+                                                                            flex-wrap: wrap;
+                                                                        }
+                                                                        
+                                                                        #product1 .title {
+                                                                            text-align: center;
+                                                                            font-size: 2vw;
+                                                                            margin-bottom: 2vw;
+                                                                        }
+                                                                        
+                                                                        #product1 .pro-container {
+                                                                            display: flex;
+                                                                            width: 80vw;
+                                                                            margin: 0 5vw 0 5vw;
+                                                                            justify-content: space-between;
+                                                                            flex-wrap: wrap;
+                                                                            flex-direction: row;
+                                                                        }
+                                                                        
+                                                                        #product1 .pro-container .pro {
+                                                                            width: 18.5vw;
+                                                                            height: 22vw;
+                                                                            min-width: 10vw;
+                                                                            position: relative;
+                                                                            margin-bottom: 1vw;
+                                                                            padding: 1vw 1vw;
+                                                                            border-radius: 1.5vw;
+                                                                            border: 3px solid#cce7d0;
+                                                                            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+                                                                            transition: 0.2s ease;
+                                                                        }
+                                                                        
+                                                                        #product1 .pro:hover {
+                                                                            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.25);
+                                                                        }
+                                                                        
+                                                                        #product1 .pro img {
+                                                                            width: 12vw;
+                                                                            height: 12vw;
+                                                                            border-radius: 1vw;
+                                                                        }
+                                                                        
+                                                                        #product .pro .des {
+                                                                            text-align: start;
+                                                                            padding: 1vw 0;
+                                                                        }
+                                                                        
+                                                                        .des span {
+                                                                            color: #606063;
+                                                                            font-size: 0.8vw;
+                                                                        }
+                                                                        
+                                                                        .des h5 {
+                                                                            /* padding: 1vw; */
+                                                                            color: #1a1a1a;
+                                                                            font-size: 1vw;
+                                                                        }
+                                                                        
+                                                                        .des .p {
+                                                                            display: flex;
+                                                                            flex-direction: row;
+                                                                            flex-wrap: wrap;
+                                                                            justify-content: space-between;
+                                                                            align-items: center;
+                                                                        }
+                                                                        
+                                                                        .des .p h5 {
+                                                                            padding-top: 0.2vw;
+                                                                            padding-bottom: 0.2vw;
+                                                                            color: #088178;
+                                                                            font-weight: 700;
+                                                                            font-size: 1.5vw;
+                                                                        }
+                                                                        
+                                                                        .des .start i {
+                                                                            font-size: 0.8vw;
+                                                                            color: rgb(243, 181, 25);
+                                                                        }
+                                                                        
+                                                                        .p a {
+                                                                            width: 1.7vw;
+                                                                            height: 1.4vw;
+                                                                            font-size: 1vw;
+                                                                            line-height: 0vw;
+                                                                            border-radius: 0.4vw;
+                                                                            background-color: #e8f6ea;
+                                                                            font-weight: 10;
+                                                                            color: #088178;
+                                                                            border: 1px solid #cce7d0;
+                                                                            padding-top: 0.2vw;
+                                                                            padding-left: 0.2vw;
+                                                                        }
+                                                                        
+                                                                        #banner {
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            justify-content: center;
+                                                                            text-align: center;
+                                                                            align-items: center;
+                                                                            background-image: url('img/banner/b2.jpg');
+                                                                            background-repeat: no-repeat;
+                                                                            width: 100%;
+                                                                            height: 25vw;
+                                                                            background-size: cover;
+                                                                            background-position: center;
+                                                                        }
+                                                                        
+                                                                        #banner h4 {
+                                                                            font-size: 1vw;
+                                                                            color: white;
+                                                                            padding: 0.5vw 0;
+                                                                        }
+                                                                        
+                                                                        #banner h2 {
+                                                                            font-size: 2vw;
+                                                                            color: white;
+                                                                            padding: 0.5vw 0;
+                                                                        }
+                                                                        
+                                                                        #banner h2 span {
+                                                                            color: #ef3636;
+                                                                        }
+                                                                        
+                                                                        #banner button:hover {
+                                                                            background-color: #088178;
+                                                                            color: #fff;
+                                                                        }
+                                                                        
+                                                                        #sm-banner {
+                                                                            display: flex;
+                                                                            flex-direction: row;
+                                                                            justify-content: space-between;
+                                                                        }
+                                                                        
+                                                                        #sm-banner .r {
+                                                                            margin: 0 5vw 0 1vw;
+                                                                            background-image: url('img/banner/b10.jpg');
+                                                                        }
+                                                                        
+                                                                        #sm-banner .l {
+                                                                            margin: 0 1vw 0 5vw;
+                                                                            background-image: url('img/banner/b17.jpg');
+                                                                        }
+                                                                        
+                                                                        #sm-banner .banner-box {
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            justify-content: center;
+                                                                            align-items: flex-start;
+                                                                            background-repeat: no-repeat;
+                                                                            width: 48%;
+                                                                            height: 22vw;
+                                                                            padding: 2vw;
+                                                                            background-size: cover;
+                                                                            background-position: center;
+                                                                        }
+                                                                        
+                                                                        #sm-banner h4 {
+                                                                            font-size: 1vw;
+                                                                            color: white;
+                                                                            font-weight: 300;
+                                                                        }
+                                                                        
+                                                                        #sm-banner h2 {
+                                                                            font-size: 2.5vw;
+                                                                            color: white;
+                                                                            font-weight: 800;
+                                                                        }
+                                                                        
+                                                                        #sm-banner span {
+                                                                            font-size: 1vw;
+                                                                            color: white;
+                                                                            font-weight: 200;
+                                                                        }
+                                                                        
+                                                                        #sm-banner button {
+                                                                            width: 5vw;
+                                                                            height: 1.8vw;
+                                                                            font-size: 0.7vw;
+                                                                            font-weight: 800;
+                                                                            margin-top: 1vw;
+                                                                            background-color: transparent;
+                                                                            border: 3px solid white;
+                                                                            color: #fff;
+                                                                        }
+                                                                        
+                                                                        #sm-banner .banner-box button:hover {
+                                                                            background-color: #088178;
+                                                                            border: 1px solid #088178;
+                                                                        }
+                                                                        
+                                                                        #banner3 {
+                                                                            display: flex;
+                                                                            justify-content: space-between;
+                                                                            flex-wrap: wrap;
+                                                                            padding: 0 1vw;
+                                                                        }
+                                                                        
+                                                                        #banner3 .r {
+                                                                            margin: 0 9vw 0 1vw;
+                                                                            background-image: url('img/banner/b18.jpg');
+                                                                        }
+                                                                        
+                                                                        #banner3 .m {
+                                                                            margin: 0 1vw 0 1vw;
+                                                                            background-image: url('img/banner/b4.jpg');
+                                                                        }
+                                                                        
+                                                                        #banner3 .l {
+                                                                            margin: 0 1vw 0 9vw;
+                                                                            background-image: url('img/banner/b7.jpg');
+                                                                        }
+                                                                        
+                                                                        #banner3 .banner-box {
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            justify-content: center;
+                                                                            text-align: start;
+                                                                            align-items: start;
+                                                                            background-repeat: no-repeat;
+                                                                            width: 25.5%;
+                                                                            padding-left: 1vw;
+                                                                            height: 15vw;
+                                                                            background-size: cover;
+                                                                            background-position: center;
+                                                                            margin-bottom: 2vw;
+                                                                        }
+                                                                        
+                                                                        #banner3 h2 {
+                                                                            color: #fff;
+                                                                            font-weight: 1000;
+                                                                            font-size: 1.4vw;
+                                                                        }
+                                                                        
+                                                                        #banner3 h3 {
+                                                                            color: #ec544e;
+                                                                            font-weight: 600;
+                                                                            font-size: 1vw;
+                                                                        }
+                                                                        
+                                                                        #newsletter {
+                                                                            display: flex;
+                                                                            flex-direction: row;
+                                                                            justify-content: space-between;
+                                                                            align-items: center;
+                                                                            background-image: url("img/banner/b14.png");
+                                                                            background-repeat: no-repeat;
+                                                                            background-color: #041e42;
+                                                                            width: 100%;
+                                                                            height: 25vw;
+                                                                            background-size: cover;
+                                                                            background-position: center;
+                                                                        }
+                                                                        
+                                                                        #newsletter h4 {
+                                                                            font-size: 1vw;
+                                                                            font-weight: 700;
+                                                                            color: #fff;
+                                                                            padding: 0.5vw 0;
+                                                                        }
+                                                                        
+                                                                        #newsletter p {
+                                                                            font-size: 2vw;
+                                                                            color: #818ea0;
+                                                                            font-weight: 400;
+                                                                            padding: 0.5vw 0;
+                                                                        }
+                                                                        
+                                                                        #newsletter span {
+                                                                            color: #ffbd27;
+                                                                        }
+                                                                        
+                                                                        #newsletter .form {
+                                                                            display: flex;
+                                                                            width: 40vw;
+                                                                            flex-direction: row;
+                                                                        }
+                                                                        
+                                                                        #newsletter input {
+                                                                            height: 4vw;
+                                                                            padding: 0 1.25em;
+                                                                            font-size: 1.5vw;
+                                                                            width: 100%;
+                                                                            border: 0.1vw solid transparent;
+                                                                            border-radius: 0.2vw;
+                                                                            outline: none;
+                                                                            border-top-right-radius: 0;
+                                                                            border-bottom-right-radius: 0;
+                                                                        }
+                                                                        
+                                                                        #newsletter button {
+                                                                            background-color: #088178;
+                                                                            color: #fff;
+                                                                            height: 4vw;
+                                                                            padding-top: 0.5vw;
+                                                                            font-size: 4rem;
+                                                                            border-top-left-radius: 0;
+                                                                            border-bottom-left-radius: 0;
+                                                                            white-space: nowrap;
+                                                                        }
+                                                                        
+                                                                        footer {
+                                                                            display: flex;
+                                                                            justify-content: space-between;
+                                                                        }
+                                                                        
+                                                                        footer .section-p1 {
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                        }
+                                                                        
+                                                                        footer .col {
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            align-items: flex-start;
+                                                                            margin-bottom: 2vw;
+                                                                        }
+                                                                        
+                                                                        footer .logo {
+                                                                            margin-bottom: 0.5vw;
+                                                                        }
+                                                                        
+                                                                        footer h4 {
+                                                                            font-size: 1vw;
+                                                                            padding-bottom: 0.31vw;
+                                                                        }
+                                                                        
+                                                                        footer p {
+                                                                            font-size: 1vw;
+                                                                            margin: 0 0 0.5vw 0;
+                                                                        }
+                                                                        
+                                                                        footer a {
+                                                                            font-size: 1vw;
+                                                                            text-decoration: none;
+                                                                            color: #222;
+                                                                            padding-bottom: 0.31vw;
+                                                                        }
+                                                                        
+                                                                        footer .follow {
+                                                                            margin-top: 0.5vw;
+                                                                        }
+                                                                        
+                                                                        footer .follow i {
+                                                                            color: #465b52;
+                                                                            font-size: 1.5vw;
+                                                                            cursor: pointer;
+                                                                            padding-right: 0.5vw;
+                                                                        }
+                                                                        
+                                                                        footer .follow i:hover,
+                                                                        footer a:hover {
+                                                                            color: #088178;
+                                                                        }
+                                                                        
+                                                                        footer .install .row img {
+                                                                            border: 0.2vw solid #088178;
+                                                                            border-radius: 0.5vw;
+                                                                            width: 7vw;
+                                                                            height: 3vw;
+                                                                            margin: 0.3vw;
+                                                                        }
+                                                                        
+                                                                        footer .install img {
+                                                                            margin: 0.3vw 0 0.3vw 0;
+                                                                            width: 25vw;
+                                                                            height: 3vw;
+                                                                        }
+                                                                        
+                                                                        .copyright p {
+                                                                            width: 100%;
+                                                                            font-size: 1vw;
+                                                                            text-align: center;
+                                                                        }
+                                                                        /*  Media queries */
+                                                                        
+                                                                        @media(max-width:799px) {
+                                                                            #navbar {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                align-items: flex-start;
+                                                                                justify-content: flex-start;
+                                                                                position: fixed;
+                                                                                top: 0;
+                                                                                right: -300px;
+                                                                                height: 100vh;
+                                                                                width: 300px;
+                                                                                transition: right 0.3s ease;
+                                                                                background-color: #e3e6f3;
+                                                                                box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+                                                                                padding: 80px 0 0 10px;
+                                                                            }
+                                                                            #navbar li {
+                                                                                margin-bottom: 25px;
+                                                                            }
+                                                                            #mobile {
+                                                                                display: flex;
+                                                                                align-content: center;
+                                                                            }
+                                                                            #mobile i {
+                                                                                color: black;
+                                                                                font-size: 20px;
+                                                                                padding-left: 20px;
+                                                                            }
+                                                                            #close {
+                                                                                position: absolute;
+                                                                                display: initial;
+                                                                                top: 30px;
+                                                                                left: 30px;
+                                                                                color: #222;
+                                                                                font-size: 24px;
+                                                                            }
+                                                                            #lg-bag {
+                                                                                display: none;
+                                                                            }
+                                                                            #hero {
+                                                                                height: 10vh;
+                                                                                background-position: top 30% right 30%;
+                                                                                padding: 0 80px;
+                                                                                display: flex;
+                                                                                align-items: flex-start;
+                                                                                justify-content: center;
+                                                                            }
+                                                                            #hero button {
+                                                                                top: 42vw;
+                                                                            }
+                                                                            #feature {
+                                                                                display: flex;
+                                                                                left: 10px;
+                                                                                margin-left: 170px;
+                                                                                width: 60%;
+                                                                                padding-bottom: 2px;
+                                                                                align-items: center;
+                                                                                justify-content: center;
+                                                                            }
+                                                                            #feature .fe-box {
+                                                                                width: 12vw;
+                                                                                margin-top: 0px;
+                                                                                min-width: 5vw;
+                                                                                height: 11vh;
+                                                                            }
+                                                                            #feature .fe-box h6 {
+                                                                                font-size: 1.3vw;
+                                                                                padding-top: 4px;
+                                                                                height: 2.8vw;
+                                                                                font-weight: 600;
+                                                                                line-height: 1.5vw;
+                                                                            }
+                                                                            #feature .fe-box img {
+                                                                                width: 7vw;
+                                                                                height: 7vw;
+                                                                            }
+                                                                            #product1 {
+                                                                                margin-top: 1px;
+                                                                                padding-top: 0px;
+                                                                                margin-bottom: 1px;
+                                                                                height: 60vw;
+                                                                            }
+                                                                            #product1 .pro-container .pro {
+                                                                                width: 18.5vw;
+                                                                                height: 25vw;
+                                                                            }
+                                                                            .p a {
+                                                                                width: 2vw;
+                                                                                height: 1.7vw;
+                                                                                font-size: 1vw;
+                                                                            }
+                                                                            #newsletter button {
+                                                                                height: 4vw;
+                                                                                padding-top: 0.5vw;
+                                                                                font-size: 1rem;
+                                                                            }
+                                                                            #banner,
+                                                                            #newsletter {
+                                                                                height: 8vh;
+                                                                            }
+                                                                            #sm-banner .banner-box {
+                                                                                height: 20vw;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                            }
+                                                                            #banner3 {
+                                                                                padding: 0 40px;
+                                                                            }
+                                                                            #banner3 .banner-box {
+                                                                                width: 20%;
+                                                                            }
+                                                                            #newsletter .form {
+                                                                                width: 70%;
+                                                                            }
+                                                                            footer {
+                                                                                height: 2vh;
+                                                                            }
+                                                                        }
